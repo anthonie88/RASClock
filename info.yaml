@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
+  wokwi_id:     481528626089085953       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Reloj de 24 horas utilizando multiplexeo"      # Project title
+  author:       "RAS UDG"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "Reloj con funcionamiento de multiplexeo que marca horas, minutos y segundos con ajuste manual de minutos y horas mediante botones."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     1000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 340x160 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
@@ -16,8 +16,8 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "MIN"
+  ui[1]: "HOUR"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -26,22 +26,22 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "SEG_A"
+  uo[1]: "SEG_B"
+  uo[2]: "SEG_C"
+  uo[3]: "SEG_D"
+  uo[4]: "SEG_E"
+  uo[5]: "SEG_F"
+  uo[6]: "SEG_G"
+  uo[7]: "SEG_DP"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
+  uio[0]: "SEC_UNITS"
+  uio[1]: "SEC_TENS"
+  uio[2]: "MIN_UNITS"
+  uio[3]: "MIN_TENS"
+  uio[4]: "HOUR_UNITS"
+  uio[5]: "HOUR_TENS"
   uio[6]: ""
   uio[7]: ""
 
